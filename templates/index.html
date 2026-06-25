@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Website Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Phishing Website Detector!!!</h1>
+    <h2>Check weather your current website is a trusted website or not </h2>
+
+
+
+    <form method="POST">
+        <input type="text" name="url"
+               placeholder="Enter Website URL"
+               required>
+
+        <button type="submit">
+            Check Website
+        </button>
+    </form>
+
+    <h2>{{ result }}</h2>
+</div>
+
+</body>
+</html>
